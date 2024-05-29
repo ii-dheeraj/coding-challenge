@@ -1,0 +1,36 @@
+answer1..// Calling the function before it is declared
+console.log(addNumbers(3, 5));
+
+// Declaring the function
+function addNumbers(num1, num2) {
+    return num1 + num2;
+}
+
+Answer2..// Calling the function before it is declared
+console.log(multiplyNumbers(2, 4));
+
+// Declaring the function using a function expression
+const multiplyNumbers = function(num1, num2) {
+    return num1 * num2;
+};
+
+Answer3..function logVariable() {
+    console.log(varVariable); // undefined
+    var varVariable = 10;
+    console.log(varVariable); // 10
+}
+
+logVariable();
+
+Answer4..function logVariable() {
+    console.log(varVariable); // undefined
+    var varVariable = 10;
+    console.log(varVariable); // 10
+}
+
+logVariable();
+
+answer5..{
+    console.log(blockScopedVariable); // ReferenceError: Cannot access 'blockScopedVariable' before initialization
+    let blockScopedVariable = 20;
+}
